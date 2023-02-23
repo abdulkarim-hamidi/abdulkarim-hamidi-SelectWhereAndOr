@@ -9,7 +9,8 @@ import java.util.Set;
 /**
  * SQL sublanguage: DQL (Data Query Language)
  *
- * Any time we are using WHERE to filter our results set, we can use logical operators, for instance: AND, OR.
+ * Any time we are using WHERE to filter our results set, we can use logical 
+ * operators, for instance: AND, OR.
  *
  * |   logical AND     |    logical OR    |
  * ----------------------------------------
@@ -30,7 +31,8 @@ import java.util.Set;
  *   |4     |'Brandon'       |'Smith'        |
  *   |5     |'Adam'          |'Jones'        |
  *
- * This would include employees Steve Jones, Adam Jones, and Steve Garcia. If we changed the OR to an AND
+ * This would include employees Steve Jones, Adam Jones, and Steve Garcia. 
+ * If we changed the OR to an AND
  * the results set would only include Steve Jones.
  *
  * Here are a few examples of using some logical operators in a WHERE clause:
@@ -38,10 +40,12 @@ import java.util.Set;
  *      SELECT * FROM table WHERE something > 500 OR something < 100;
  *      SELECT * FROM table WHERE value NOT IN ('value1', 'value2');
  *
- * There are other logical operators as well, but we will focus on AND and OR for now. These operators are not just for
+ * There are other logical operators as well, but we will focus on AND and OR 
+ * for now. These operators are not just for
  * WHERE clauses, and can be used in many places in a SQL statement.
  *
- * Additional reference material if needed: https://www.w3schools.com/sql/sql_operators.asp
+ * Additional reference material if needed: 
+ * https://www.w3schools.com/sql/sql_operators.asp
  */
 
 
@@ -60,7 +64,8 @@ public class FilteringLogicActivity {
 
     public Set<Employee> problem1() {
         /**
-         * Problem 1: Write a statement that will query the above table for all employees named 'Steve' who earn
+         * Problem 1: Write a statement that will query the above table for 
+         * all employees named 'Steve' who earn
          * more than $75,000.
          */
         String sql = FileUtil.parseSQLFile("problem1.sql");
@@ -85,7 +90,8 @@ public class FilteringLogicActivity {
 
     public Set<Employee> problem2() {
         /**
-         * Problem 2: Write a statement that will query the above table for all employees who earn more than $100,000 or less
+         * Problem 2: Write a statement that will query the above table for 
+         * all employees who earn more than $100,000 or less
          * than $50,000
          */
         String sql = FileUtil.parseSQLFile("problem2.sql");
@@ -110,7 +116,8 @@ public class FilteringLogicActivity {
 
     public Set<Employee> problem3() {
         /**
-         * Problem 3: Write a statement that will query the above table for all employees who earn more than $50,000 and are NOT
+         * Problem 3: Write a statement that will query the above table for 
+         * all employees who earn more than $50,000 and are NOT
          * named 'Steve'
          * Hint: Look up the NOT and IN logical operators.
          */
